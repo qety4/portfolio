@@ -1,0 +1,73 @@
+.about-tech-container {
+    
+    font-family: 'lato';
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    margin: 0 0 0 7%;
+    .prof {
+        font-size: 4.5rem;
+        width: 100%;
+        letter-spacing: 0.5rem;
+        text-shadow: 0.03rem 0.03rem 0.1rem rgba(0, 0, 0, 0.345);
+
+    }
+
+    @keyframes scroll-right {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .prof-variations-container {
+        overflow: hidden;
+        margin: 0 0 0 1.4rem;
+        display: flex;
+        width: 40%;
+        position: relative;
+        .prof-variations {
+            display: flex;
+            white-space: nowrap;
+            animation: scroll-right 18s linear infinite;
+
+            .prof-variation {
+                font-size: 2.3rem;
+                letter-spacing: 0.5rem;
+                padding: 0 0.7rem;
+                letter-spacing: 0.23rem;
+            }
+
+        }
+        &:hover .prof-variations{
+            animation-play-state: paused;
+        }
+        &:before, &:after{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            z-index: 2;
+            content: "";
+            width: 11%;
+        }
+        &:before{
+            left: 0;
+            transform: translateX(-13%);
+            background: linear-gradient(to left,rgba(255,255,255,0), white);
+        }
+        &:after{
+            right: 0;
+            transform: translateX(13%);
+            background: linear-gradient(to right,rgba(255,255,255,0),white);
+        }
+    }
+    .cv-download{
+        text-decoration: none;
+        color: black;
+    }
+}

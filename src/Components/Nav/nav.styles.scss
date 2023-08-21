@@ -1,0 +1,22 @@
+.nav{
+    width: 100%;
+    // height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3.79% 0 4% 0;
+    .nav-categories{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        font-size: 171%;
+        font-family: 'Josefin Sans';
+        li{
+            cursor: pointer;
+            &:hover{
+                color: rgb(45, 45, 45);
+            }
+        }
+    }
+}
