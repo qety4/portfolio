@@ -1,0 +1,18 @@
+.tech-logo {
+    height: 3em;
+    width: 3em;
+    // max-width: 35%;
+    // max-height: 35%;
+    background: white;
+    box-shadow: 0 1.8px 3px rgba(0, 0, 0, 0.053);
+    padding: 1em;
+    border-radius: 48%;
+    transition: ease-in-out .4s;
+    .tech-logo__img {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover{
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.135);
+    }
+}

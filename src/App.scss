@@ -1,22 +1,39 @@
 .home-page {
     position: relative;
     width: 100%;
-
     .about {
         margin: 1% 0 0 0;
         position: relative;
-
-        .about-name {
+        margin-bottom: 10vh;
+        .about__name {
             position: relative;
-            height: 100%;
             width: 100%;
+            height: 95vh;
+            margin-bottom: 5vh;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
-        .about-tech {
+        .about__tech {
+            width: 100%;
+            height: 100%;
             position: relative;
         }
+
     }
+
+    .projects-container {
+        width: 92%;
+        height: 100%;
+    }
+
+
+    .contact-container {
+        margin: 3vh 0 9vh 0;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }

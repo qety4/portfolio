@@ -7,7 +7,8 @@ const AboutName = () => {
       <div className='about-name__text'>
         <p className='about-name__name'>Hi👋, I'm <b>Yan</b></p>
         <p className='about-name__about'>
-          Inspired by learning and motivated by challenges, focusing on creating highly functional and visually appealing web applications, taking projects from onset, to complete functionality, with consistent key communication at every step !
+          Inspired by challenges and motivated by learning !
+          <br />Always learning and improving
         </p>
       </div>
       <div className='about-name__image'>
