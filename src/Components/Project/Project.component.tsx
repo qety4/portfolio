@@ -5,32 +5,41 @@ import { ProjectInfo } from '../../types/types'
 
 function Project({ projectInfo }: { projectInfo: ProjectInfo }) {
 
-    const { side, title, about, stack, projectImg } = projectInfo
+    const { title, about, stack, projectImg } = projectInfo
 
     return (
-        <div className={`project-container ${side === 'left' && 'left' }`}>
-            <img className='project__img ' src={projectImg} alt="" />
-            <div className='project__text'>
-                <div className='project__desc'>
-                    <p className='project__title'>
-                        {title}
-                    </p>
+        <article className='project-container'>
 
-                    <p className='project__about'>
+            <span className='project'>
+                <p className='project__title'>
+                    {title}
+                </p>
+                <img className='project__img ' src={projectImg} alt="" />
+                <div className='project__desc-container'>
+
+                    {/* <p className='project__title'>
+                        {title}
+                    </p> */}
+
+                    <p className='project__desc'>
                         {about}
                     </p>
 
+                    <ul className='project__stack'>
+                        {
+                            stack.map((item) =>
+                                <li key={item}>{item}</li>
+                            )
+                        }
+                    </ul>
+
                     <img className="project__link" src={link} alt="" />
                 </div>
-                <div className='project__stack'>
-                    {
-                        stack.map((item) =>
-                            <span key={item}>{item}</span>
-                        )
-                    }
-                </div>
-            </div>
-        </div>
+
+            </span>
+
+
+        </article>
     )
 }
 

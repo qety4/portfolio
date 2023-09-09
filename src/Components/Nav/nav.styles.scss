@@ -1,24 +1,26 @@
 .nav{
-    width: 100vw;
+    width: 100%;
     position: fixed;
     z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-start;
     height: 3vh;
-
 
     .nav-categories{
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
-        font-size: 151%;
-        padding: 0 4%;
+        font-size: 150%;
         font-weight: 400;
         font-family: 'Josefin Sans';
+        letter-spacing: .01rem;
         li{
+            text-align: center;
+            width: 20%;
             cursor: pointer;
+
             &:hover{
                 color: rgb(45, 45, 45);
             }

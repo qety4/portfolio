@@ -4,6 +4,7 @@ import './App.scss'
 import AboutTech from './Components/AboutTech/AboutTech.component'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
+import Divider from './Components/Divider/Divider'
 
 function App() {
 
@@ -12,23 +13,21 @@ function App() {
       <Nav />
       <main>
         <div className='home-page'>
-          
+
           <div className='about'>
-            <div className='about__name'>
-              <AboutName />
-            </div>
-            <div className='about__tech'>
-              <AboutTech />
-            </div>
+
+            <AboutName />
+            <AboutTech />
+
           </div>
 
-          <div className='projects-container'>
-            <Projects />
-          </div>
+          <Divider />
 
-          <div className='contact-container'>
-            <Contact/>
-          </div>
+          <Projects />
+
+          <Divider />
+
+          <Contact />
 
         </div>
       </main>

@@ -15,8 +15,8 @@ function Contact() {
                     </div>
                     <div className='contact__method'>
                         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png'
-                        // "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" 
-                        alt="" className='contact__method__img' />
+                            // "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" 
+                            alt="" className='contact__method__img' />
                     </div>
                     <div className='contact__method'>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="" className='contact__method__img' />

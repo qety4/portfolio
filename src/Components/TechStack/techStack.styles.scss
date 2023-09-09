@@ -1,13 +1,37 @@
-.tech-stack {
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 2% 3%;
-        border-radius: 0.3rem;
+@import '../../assets/sass.variables.scss';
 
-        .techlogo-container {
-                display: flex;
-                justify-content: center;
+
+.about-tech__stack {
+        margin-top: 3vh;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -10;
+        .tech-stack {
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 10% 0%;
+                border-radius: 0.3rem;
+                // background-color: rgba(0, 0, 0, 0.125);
+
+                .techlogo-container {
+                        display: flex;
+                        justify-content: center;
+                }
+
         }
+        @media (max-width: $responsivePageS) {
+                width: 70%;
+        }
+        @media (min-width: 70rem) {
+              .tech-stack{
+                gap: 1.3%;
+              }  
+        }
+
+
 }

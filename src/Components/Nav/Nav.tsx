@@ -4,13 +4,15 @@ import './nav.styles.scss'
 const Nav = () => {
   return (
     <>
-      <div className='nav'>
+      <nav className='nav'>
         <ul className='nav-categories'>
-          <li>ABOUT</li>
+          <li>
+            ABOUT
+          </li>
           <li>PROJECTS</li>
-          <li>CONTACTS</li>
+          <li>CONTACT</li>
         </ul>
-      </div>
+      </nav>
       {/* <div className='nav-logo'>
           Yan Dartau
           (web dev)

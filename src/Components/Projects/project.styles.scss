@@ -1,5 +1,199 @@
-.projects{
+@import '../../assets/sass.variables.scss';
+
+
+.projects {
     position: relative;
     width: 100%;
     height: 100%;
+
+    & article:last-child{
+        margin: 0;
+    }
+    .projects__title{
+        p{
+            color: rgba(0, 0, 0, 0.331);
+            font-weight: 200;
+            letter-spacing: 0.03rem;
+            font-size: 1.1rem;
+        }
+        font-size: 1.9rem;
+        letter-spacing: 0.13rem;
+        margin:  0 0 3.8rem 0;
+        text-align: center;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 19vh 0;
+        position: relative;
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            
+
+            .project__title {
+                margin: 0.2rem 0rem 0.2rem 0rem;
+                font-size: 180%;
+                text-align: center;
+                letter-spacing: 0.3rem;
+                position: absolute;
+                top: 3%;
+                background-color: white;
+                border-radius: 8px;
+                padding: 0rem 0.8rem 0.1rem 0.8rem;
+            }
+
+            .project__img {
+                width: 51%;
+                aspect-ratio: 1.13/0.73;
+                border-radius: 0.3rem;
+                box-shadow: 0 3px 8px rgba(106, 106, 106, 0.051);
+                z-index: -1;
+                object-fit: fill;
+            }
+
+
+            .project__desc-container {
+
+
+                min-height: fit-content;
+                max-height: 30%;
+                overflow: hidden;
+                width: 51%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                bottom: 13%;
+                z-index: 100;
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.096);
+                padding: 0.3% 0.8% 0.3% 0.8%;
+                border-radius: 4px;
+                background-color: rgba(234, 234, 234, 0.96);
+                transition: .1s ease-out;
+
+                &:hover {
+                    transition-delay: 2.1s;
+                    overflow: scroll;
+                }
+
+
+                .project__desc {
+                    line-height: 1.38rem;
+                    font-size: 105%;
+                    letter-spacing: 0.07rem;
+                }
+
+                .project__link {
+                    position: absolute;
+                    top: 3%;
+                    right: 2.8%;
+                    height: 1.8rem;
+                }
+            }
+        }
+
+    }
+
+    .project__stack {
+        display: flex;
+        justify-content: center;
+        margin: 0.8rem 0rem 0 0rem;
+        font-size: 100%;
+        width: 100%;
+        list-style: none;
+        gap: 0.38rem;
+        letter-spacing: 0.07rem;
+
+        span {
+            white-space: nowrap;
+        }
+
+    }
+
+
+
+    @media (max-width:$responsivePageS) {
+        .project-container {
+            margin: 0 0 10vh 0;
+
+            .project__about {
+
+                .project__img {
+                    width: 80%;
+                }
+
+                .project__desc-container {
+                    width: 80%;
+                    max-height: 40%;
+                    bottom: 0;
+                    // padding: 0.1rem 0.3rem 0.3rem 0.3rem;
+
+                    .project__title {
+                        height: 30%;
+                        letter-spacing: 0;
+                        font-size: 100%;
+                        margin: 0 0 0.19rem 0;
+                    }
+
+                    .project__desc {
+                        line-height: 1.1rem;
+                        font-size: 80%;
+                    }
+
+                }
+
+
+                .project__stack {
+                    font-size: 0.75rem;
+                    margin: 0;
+                    // width: 80%;
+                }
+
+            }
+        }
+    }
 }
+
+//     @media (min-width:$responsivePageS) and (max-width:$responsivePageM) {
+
+//         .project-container {
+//             margin: 0 0 18vh 0;
+
+
+
+//             .project__desc-container {
+//                 max-height: 40%;
+//                 bottom: 0;
+
+//                 .project__title {
+//                     height: 30%;
+//                     letter-spacing: 0;
+//                     font-size: 120%;
+//                     margin: 0 0 0.19rem 0;
+//                 }
+//                 .project__a {
+//                     line-height: 0.5rem;
+//                     font-size: 50%;
+//                 }
+
+//             }
+
+
+//             .project__stack {
+//                 font-size: 0.8rem;
+//                 margin: 0;
+//                 width: 80%;
+
+//             }
+
+
+//         }
+
+//     }
+// }

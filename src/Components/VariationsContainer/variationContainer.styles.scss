@@ -1,0 +1,63 @@
+.prof-variations-container {
+    overflow: hidden;
+    margin: 0.03rem 0 0.08rem 0rem;
+    display: flex;
+    width: 70%;
+    position: relative;
+    border-radius: 10px;
+
+    .prof-variations {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll-right 120s linear infinite;
+
+        .prof-variation {
+            color: rgba(1, 1, 1, 0.782);
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            padding: 0 0.5rem;
+            letter-spacing: 0.23em;
+            text-transform: uppercase;
+            font-family: system-ui ;
+        }
+
+    }
+
+
+
+    &:hover .prof-variations {
+        animation-play-state: paused;
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 2;
+        content: "";
+        width: 3%;
+    }
+
+    &:before {
+        left: 0;
+        transform: translateX(-13%);
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    }
+
+    &:after {
+        right: 0;
+        transform: translateX(13%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    }
+
+    @keyframes scroll-right {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}
