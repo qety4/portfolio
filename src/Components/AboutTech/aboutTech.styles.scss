@@ -6,29 +6,31 @@
     max-height: 100%;
     position: relative;
 
-
     .about-tech__header {
-        // font-family: 'lato';
+
+        background-color: rgba(255, 255, 255, 0.9);
         box-sizing: content-box;
+        padding: 0 20% 4% 20%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 70%;
+        width: 60%;
         height: 100%;
-        padding: 0rem 1.8rem 1rem 1.8rem;
-        background-color: rgba(255, 255, 255, 0.9);
+        // padding: 0rem 1.8rem 1rem 1.8rem;
+        min-height: 15rem;
         border-radius: 8px;
 
         .about-tech__prof {
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
             width: 100%;
             margin: 0 0 0rem 0;
 
             .prof {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont;
-                font-size: 2.3rem;
+                font-size: clamp(1.3rem, 3vw, 2.3rem);
                 font-weight: 300;
                 text-transform: uppercase;
                 letter-spacing: 0.3rem;
@@ -46,13 +48,13 @@
             text-align: center;
 
             .about-tech__text {
-                font-family: system-ui ;
-                letter-spacing: 0.19rem;
+                font-family: system-ui;
+                letter-spacing: 0.11em;
                 font-weight: 300;
-                line-height: 110%;
-                font-size: 1.8rem;
-                margin: 0 0 .8rem 0;
-                text-shadow: 0.18px 0.1px 1.8px rgba(88, 88, 88, 0.484);
+                line-height: 103%;
+                font-size: clamp(1rem, 2vw, 1.8rem);
+                margin: 0 0 .7rem 0;
+                text-shadow: 0.18px 0.1px 1.8px rgba(88, 88, 88, 0.071);
             }
         }
 
@@ -67,10 +69,11 @@
 
             .github-link {
                 position: absolute;
-                right: 0;
-                bottom: 0.3%;
-                width: 2.8rem;
-                height: 2.8rem;
+                box-sizing: content-box;
+                right: -2em // calc((60% - (18rem + 0.2% )) / 2)
+                ;
+                bottom: 10%;
+                height: 2.38em;
 
                 .github-img {
                     border-radius: 50%;
@@ -78,6 +81,11 @@
                     height: 100%;
                     width: 100%;
                     object-fit: fill;
+                    transition: linear .3s;
+
+                    &:hover {
+                        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+                    }
                 }
             }
         }
@@ -89,12 +97,12 @@
             box-sizing: content-box;
             text-decoration: none;
             color: black;
-            width: 18rem;
             border-radius: 3.8px;
             border: 0.1px solid rgba(0, 0, 0, 0.199);
             box-shadow: 0px 1.8px 3.8px rgba(0, 0, 0, 0.043);
             text-align: center;
-            padding: 0 0.2%;
+            padding: 0.5em 1.4em;
+            transition: .3s linear;
 
             .cv-download__btn {
                 text-decoration: none;
@@ -104,7 +112,7 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     box-sizing: content-box;
-                    font-size: 1.3rem;
+                    font-size: clamp(1rem, 1.8vw, 1.3rem);
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -112,26 +120,18 @@
 
                     .cv-download__img {
                         box-sizing: content-box;
-                        width: 3rem;
+                        height: 2em;
 
                     }
                 }
             }
 
             &:hover {
-                background: rgba(0, 0, 0, 0.051);
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.128);
             }
         }
 
     }
-
-    // transition: 3s linear;
-    // &:hover{
-    //     .about-tech__stack{
-    //         z-index: 100;
-    //     }
-    // }
-
 
 
 }

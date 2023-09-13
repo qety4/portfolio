@@ -13,12 +13,12 @@
 
         .prof-variation {
             color: rgba(1, 1, 1, 0.782);
-            font-size: 1.5em;
+            font-size: clamp(1.1rem, 2.3vw, 150%);
             letter-spacing: 0.1em;
             padding: 0 0.5rem;
             letter-spacing: 0.23em;
             text-transform: uppercase;
-            font-family: system-ui ;
+            font-family: system-ui;
         }
 
     }

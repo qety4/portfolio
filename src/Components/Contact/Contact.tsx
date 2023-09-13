@@ -1,32 +1,76 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './contact.styles.scss'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
+import { z } from 'zod'
+import { contactValidator } from '../../validators/contactValidator'
 
+
+type FormData = z.infer<typeof contactValidator>
 
 function Contact() {
+    const ref = useRef<HTMLElement>(null)
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ['0 1', '1 1']
+    })
+    const scaleProgress = useTransform(scrollYProgress,[0, 1],[0.75, 1])
+
+    const {
+        register,
+        handleSubmit,
+        setError,
+        reset,
+        formState: { errors }
+    } = useForm<FormData>({
+        resolver: zodResolver(contactValidator),
+    })
+
+
+    const submit =()=>{
+
+    }
+
     return (
-        <div className='contact'>
+        <motion.section
+        ref={ref}
+        className='contact'
+        style={
+            {
+                scale:scaleProgress,
+            }
+        }
+        >
             <h3 className='contact__title'>Contact Me</h3>
-            <form className='contact__form'>
-                <input className='contact__form__email' type="text" placeholder='Your email' />
-                <textarea className="contact__form__text" placeholder="your message" name="" id="" />
+            <form className='contact__form' action='' onSubmit={handleSubmit(submit)}>
+
+                <input className='contact__form__email' type="email" 
+                {...register('email')}
+                placeholder='your email...' />
+                <textarea className="contact__form__text" 
+                {...register('emailBody')}
+                placeholder="your message..." id="" />
+
                 <div className='contact__methods'>
-                    <div className='contact__method'>
+                    <a className='contact__method'>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Gmail_2020.png" alt="" className='contact__method__img' />
-                    </div>
-                    <div className='contact__method'>
+                    </a>
+                    <a className='contact__method' href='https://www.linkedin.com/in/yandartau/' target='_blank'>
                         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png'
-                            // "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" 
                             alt="" className='contact__method__img' />
-                    </div>
-                    <div className='contact__method'>
+                    </a>
+                    <a className='contact__method' >
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="" className='contact__method__img' />
-                    </div>
+                    </a>
                 </div>
+                <p>{errors.email?.message || errors.emailBody?.message}</p>
                 <button className='contact__form__btn'>
                     connect !
                 </button>
+
             </form>
-        </div>
+        </motion.section>
     )
 }
 

@@ -1,45 +1,61 @@
 
-import './project.styles.scss'
 import link from '../../assets/svg/external-link.svg'
 import { ProjectInfo } from '../../types/types'
+import {  motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 
 function Project({ projectInfo }: { projectInfo: ProjectInfo }) {
+    const { title, about, stack, projectImg, url } = projectInfo
 
-    const { title, about, stack, projectImg } = projectInfo
+    const ref = useRef<HTMLElement>(null)
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ['0 1', '1.33 1']
+    })
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.98, 1])
+    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.1, 1])
 
     return (
-        <article className='project-container'>
 
-            <span className='project'>
-                <p className='project__title'>
-                    {title}
-                </p>
-                <img className='project__img ' src={projectImg} alt="" />
-                <div className='project__desc-container'>
+            <motion.section ref={ref} className='project-container'
+                style={
+                    {
+                        scale: scaleProgress,
+                        opacity: opacityProgress,
+                    }
+                }
 
-                    {/* <p className='project__title'>
+
+            >
+
+                <span className='project'>
+                    <p className='project__title'>
                         {title}
-                    </p> */}
-
-                    <p className='project__desc'>
-                        {about}
                     </p>
+                    <img className='project__img ' src={projectImg} alt="" />
+                    <div className='project__desc-container'>
 
-                    <ul className='project__stack'>
-                        {
-                            stack.map((item) =>
-                                <li key={item}>{item}</li>
-                            )
-                        }
-                    </ul>
+                        <p className='project__desc'>
+                            {about}
+                        </p>
 
-                    <img className="project__link" src={link} alt="" />
-                </div>
+                        <ul className='project__stack'>
+                            {
+                                stack.map((item) =>
+                                    <li key={item}>{item}</li>
+                                )
+                            }
+                        </ul>
+                        <a href={url} target='_blank'>
+                            <img className="project__link" src={link} alt="" />
+                        </a>
+                    </div>
 
-            </span>
+                </span>
 
 
-        </article>
+            </motion.section>
+
     )
 }
 

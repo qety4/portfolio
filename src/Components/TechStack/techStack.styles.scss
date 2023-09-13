@@ -3,12 +3,14 @@
 
 .about-tech__stack {
         margin-top: 3vh;
-        width: 50%;
+        width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
         z-index: -10;
+        height: fit-content;
+
         .tech-stack {
                 height: 100%;
                 width: 100%;
@@ -16,21 +18,36 @@
                 grid-template-columns: repeat(5, 1fr);
                 gap: 10% 0%;
                 border-radius: 0.3rem;
-                // background-color: rgba(0, 0, 0, 0.125);
 
                 .techlogo-container {
                         display: flex;
                         justify-content: center;
+                        position: relative;
+
+                        &:hover {
+                                .tech-logo {
+                                        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.135);
+                                }
+
+                                .tech-name {
+
+                                        p {
+                                                scale: 1.1;
+                                        }
+                                }
+                        }
                 }
 
         }
+
         @media (max-width: $responsivePageS) {
                 width: 70%;
         }
+
         @media (min-width: 70rem) {
-              .tech-stack{
-                gap: 1.3%;
-              }  
+                .tech-stack {
+                        gap: 3%;
+                }
         }
 
 

@@ -1,21 +1,21 @@
 .nav{
     width: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: -100;
     // display: flex;
     // justify-content: center;
     // align-items: flex-start;
-    height: 3vh;
+    // height: 1vh;
 
     .nav-categories{
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
-        font-size: 150%;
-        font-weight: 400;
-        font-family: 'Josefin Sans';
-        letter-spacing: .01rem;
+        font-size: clamp(1rem,2vw,150%);
+        font-weight: 100;
+        font-family: system-ui ;
+        letter-spacing: .13rem;
         li{
             text-align: center;
             width: 20%;

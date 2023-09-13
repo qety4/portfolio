@@ -1,8 +1,11 @@
+@import '../../assets/sass.variables.scss';
+
+
 .about-name {
     position: relative;
     width: 100%;
-    height: 93vh;
-    margin-bottom: 7vh;
+    height: 83vh;
+    margin-bottom: 20vh;
     box-sizing: content-box;
     display: flex;
     justify-content: center;
@@ -28,14 +31,14 @@
         flex-direction: column;
         width: 23rem;
         position: relative;
-        margin-top: 2.3rem;
+        margin-top: 1.3rem;
 
         .about-name__name {
             font-family: 'Public Sans';
             color: rgb(6, 10, 36);
             text-align: center;
-            width: 83%;
-            font-size: 1.98rem;
+            width: 100%;
+            font-size: clamp(1.7rem, 3.1vw, 180%);
             font-weight: 200;
             letter-spacing: 0.05rem;
             margin: 0 0 0rem 0;
@@ -44,7 +47,7 @@
 
             b {
                 font-weight: 400;
-                font-size: 120%;
+                font-size: 119%;
                 letter-spacing: 0.1rem;
             }
         }
@@ -53,35 +56,50 @@
             color: rgba(24, 24, 24, 0.895);
             width: 100%;
             letter-spacing: .17rem;
-            line-height: 1.8rem;
+            line-height: 1em;
             word-wrap: break-word;
             text-align: center;
-            font-size: 1.8rem;
+            font-size: clamp(1.3rem, 2.3vw, 170%);
             font-weight: 300;
             font-family: 'Public Sans';
             text-shadow: .3px 0.4px 2.8px rgba(144, 144, 144, 0.175);
 
         }
-        
+
 
         .web-dev-text {
             display: flex;
             align-items: flex-end;
             justify-content: center;
             height: 1.3rem;
-            margin-top: 1.3rem;
-            font-family: system-ui ;
+            margin-top: 5%;
+            font-family: system-ui;
+
             b {
                 text-transform: uppercase;
                 position: relative;
-                font-size: 1.3rem;
-                letter-spacing: 0.3rem;
+                font-size: clamp(1.1rem, 2vw, 138%);
+                letter-spacing: 0.19em;
                 color: rgb(0, 0, 0);
                 font-weight: 300;
+                text-shadow: 0 0.3px 1px rgba(0, 0, 0, 0.071);
             }
         }
 
+    }
 
+    @media (max-width:$responsivePageS) {
+        .about-name__text {
+            margin-top: 3rem;
+
+            .about-name__about {
+                line-height: 1.38rem;
+            }
+        }
+
+        .about-name__image {
+            width: 11.8rem;
+        }
     }
 
 }

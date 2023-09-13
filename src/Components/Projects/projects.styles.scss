@@ -6,27 +6,35 @@
     width: 100%;
     height: 100%;
 
-    & article:last-child{
+    & article:last-child {
         margin: 0;
     }
-    .projects__title{
-        p{
+
+    .projects__title {
+        p {
+            text-transform: lowercase;
             color: rgba(0, 0, 0, 0.331);
             font-weight: 200;
             letter-spacing: 0.03rem;
-            font-size: 1.1rem;
+            font-size: clamp(0.9rem, 1vw, 1.1rem);
         }
+
+        font-weight: 400;
+        font-family: system-ui;
+        text-transform: uppercase;
         font-size: 1.9rem;
+        font-size: clamp(1.3rem, 2vw, 1.9em);
         letter-spacing: 0.13rem;
-        margin:  0 0 3.8rem 0;
+        margin: 0 0 7% 0;
         text-align: center;
+
     }
 
     .project-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 19vh 0;
+        margin: 0 0 9% 0;
         position: relative;
 
         .project {
@@ -34,18 +42,20 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 
             .project__title {
-                margin: 0.2rem 0rem 0.2rem 0rem;
-                font-size: 180%;
+                margin: 0 0 0.18% 0;
+                font-size: clamp(1.3rem, 2vw, 190%);
                 text-align: center;
-                letter-spacing: 0.3rem;
+                letter-spacing: 0.25em;
                 position: absolute;
                 top: 3%;
                 background-color: white;
+                font-family: "Public Sans";
                 border-radius: 8px;
-                padding: 0rem 0.8rem 0.1rem 0.8rem;
+                padding: 0rem 0.7% 0.2% 0.7%;
             }
 
             .project__img {
@@ -59,8 +69,6 @@
 
 
             .project__desc-container {
-
-
                 min-height: fit-content;
                 max-height: 30%;
                 overflow: hidden;
@@ -74,11 +82,10 @@
                 box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.096);
                 padding: 0.3% 0.8% 0.3% 0.8%;
                 border-radius: 4px;
-                background-color: rgba(234, 234, 234, 0.96);
-                transition: .1s ease-out;
+                background-color: rgba(245, 245, 245, 0.96);
+                transition-delay: 3s;
 
                 &:hover {
-                    transition-delay: 2.1s;
                     overflow: scroll;
                 }
 
@@ -93,7 +100,7 @@
                     position: absolute;
                     top: 3%;
                     right: 2.8%;
-                    height: 1.8rem;
+                    height: 1.8em;
                 }
             }
         }
@@ -104,7 +111,8 @@
         display: flex;
         justify-content: center;
         margin: 0.8rem 0rem 0 0rem;
-        font-size: 100%;
+        // font-size: 100%;
+        font-size: clamp(70%, 1vw, 100%);
         width: 100%;
         list-style: none;
         gap: 0.38rem;
@@ -118,41 +126,19 @@
 
 
 
-    @media (max-width:$responsivePageS) {
+    @media (max-width:$responsivePageM) {
         .project-container {
             margin: 0 0 10vh 0;
 
-            .project__about {
+            .project {
+
 
                 .project__img {
-                    width: 80%;
+                    width: 70%;
                 }
 
                 .project__desc-container {
-                    width: 80%;
-                    max-height: 40%;
-                    bottom: 0;
-                    // padding: 0.1rem 0.3rem 0.3rem 0.3rem;
-
-                    .project__title {
-                        height: 30%;
-                        letter-spacing: 0;
-                        font-size: 100%;
-                        margin: 0 0 0.19rem 0;
-                    }
-
-                    .project__desc {
-                        line-height: 1.1rem;
-                        font-size: 80%;
-                    }
-
-                }
-
-
-                .project__stack {
-                    font-size: 0.75rem;
-                    margin: 0;
-                    // width: 80%;
+                    width: 70%;
                 }
 
             }

@@ -1,0 +1,20 @@
+@import '../../assets/sass.variables.scss';
+
+.click-dialog{
+    position: absolute;
+    font-size: 1.3rem;
+    right: calc((100% - 12 * 2.3rem) / 2);
+    top: 0;
+    font-family: 'public sans';
+    p{
+        line-height: 0.5rem;
+        display: inline-block;
+    }
+    @media (max-width:$responsivePageM) {
+        top: -3%;
+        right: calc((100% - 12 * 3rem) / 2) ;
+    }
+    @media (max-width:$responsivePageS){
+       right: calc((100% - 12 * 1.8rem) / 2) ;
+    }
+}

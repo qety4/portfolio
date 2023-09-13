@@ -3,6 +3,5 @@ export type ProjectInfo = {
     title: string,
     about: string,
     stack: string[],
-    side: string,
-    link:string
+    url:string
 }

@@ -3,6 +3,8 @@ import './aboutTech.styles.scss'
 import TechStack from '../TechStack/TechStack.component'
 import png from '../../assets/svg/png.svg'
 import VariationsContainer from '../VariationsContainer/VariationsContainer'
+import WebDevContainer from '../WebDevContainer/WebDevContainer'
+import { motion } from 'framer-motion'
 
 const AboutTech = () => {
   return (
@@ -10,9 +12,19 @@ const AboutTech = () => {
     <div className='about-tech'>
 
 
-      <div className='about-tech__header'>
+      <motion.div className='about-tech__header'
+        variants={{
+          hidden: { opacity: 0, y: 8, x: 0 },
+          visible: { opacity: 1, y: 0, x: 0 },
+        }}
+        viewport={{ once: true }}
+        initial='hidden'
+        whileInView='visible'
+        transition={{ duration: 1.8, delay: 0.8, }}
+
+      >
         <div className='about-tech__prof'>
-          <p className='prof'>Web Developer</p>
+          <WebDevContainer />
           <VariationsContainer />
         </div>
 
@@ -24,7 +36,16 @@ const AboutTech = () => {
 
         <div className='cv-links'>
 
-          <div className='cv-download-container'>
+          <motion.div className='cv-download-container'
+           variants={{
+            hidden: { opacity: 0, y: 3, x: 0 },
+            visible: { opacity: 1, y: 0, x: 0 },
+          }}
+          viewport={{ once: true }}
+          initial='hidden'
+          whileInView='visible'
+          transition={{ duration: 0.8, delay: 1, }}
+          >
             <a href="assets/wink.jpg" className='cv-download__btn' download>
               <div className='cv-download__text'>
                 <p>Download my CV !
@@ -32,17 +53,17 @@ const AboutTech = () => {
                 <img className="cv-download__img" src={png} alt="" />
               </div>
             </a>
-          </div>
-          <a className="github-link" href="">
+          </motion.div>
+          <a className="github-link" href="https://github.com/qety4" target='_blank'>
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" className='github-img' alt="" />
           </a>
 
         </div>
 
 
-      </div>
+      </motion.div>
 
-      <TechStack />
+      <TechStack bg={true} />
 
     </div>
 

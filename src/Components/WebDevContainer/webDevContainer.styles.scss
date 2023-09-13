@@ -1,0 +1,25 @@
+
+.webdev-overlay{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+}
+
+.techstack-popover{
+    top: -8%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    padding-top: 0;
+    .about-tech__stack{
+        width: 90%;
+        height: 70%;
+    }
+}

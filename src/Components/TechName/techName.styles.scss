@@ -1,0 +1,20 @@
+@import '../../assets/sass.variables.scss';
+
+
+.tech-name {
+  position: absolute;
+  bottom: 0;
+
+
+  p {
+    transition: ease-in .8s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(0.7rem, 1.1vw, 1.3rem);
+    letter-spacing: 0.08rem;
+    background-color: rgba(255, 255, 255, 0.121);
+    height: fit-content;
+    width: fit-content;
+    padding: 0.1em 0.3em;
+    border-radius: 0.3rem;
+  }
+}

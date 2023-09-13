@@ -25,7 +25,7 @@ function App() {
 
           <Projects />
 
-          <Divider />
+          {/* <Divider /> */}
 
           <Contact />
 
