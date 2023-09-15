@@ -1,10 +1,10 @@
 import React from 'react'
 import './divider.styles.scss'
 
-function Divider() {
+function Divider({id}:{id:string}) {
 
   return (
-    <section className='divider'>
+    <section id={id} className='divider'>
 
     </section>
   )

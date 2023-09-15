@@ -1,38 +1,16 @@
-import AboutName from './Components/AboutName/AboutName.component'
-import Nav from './Components/Nav/Nav'
-import './App.scss'
-import AboutTech from './Components/AboutTech/AboutTech.component'
-import Projects from './Components/Projects/Projects'
-import Contact from './Components/Contact/Contact'
-import Divider from './Components/Divider/Divider'
+import React from 'react'
+import Loader from './Components/Loader/Loader.tsx'
+
+const Page = React.lazy(() => import('./Page.tsx'))
 
 function App() {
-
-  return (
-    <>
-      <Nav />
-      <main>
-        <div className='home-page'>
-
-          <div className='about'>
-
-            <AboutName />
-            <AboutTech />
-
-          </div>
-
-          <Divider />
-
-          <Projects />
-
-          {/* <Divider /> */}
-
-          <Contact />
-
-        </div>
-      </main>
-    </>
-  )
+    return (
+        <>
+            <React.Suspense fallback={<Loader />}>
+                <Page />
+            </React.Suspense>
+        </>
+    )
 }
 
 export default App

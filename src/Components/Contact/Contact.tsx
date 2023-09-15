@@ -15,7 +15,7 @@ function Contact() {
         target: ref,
         offset: ['0 1', '1 1']
     })
-    const scaleProgress = useTransform(scrollYProgress,[0, 1],[0.75, 1])
+    const scaleProgress = useTransform(scrollYProgress,[0, 1],[0.78, 1])
 
     const {
         register,
@@ -31,6 +31,7 @@ function Contact() {
     const submit =()=>{
 
     }
+    
 
     return (
         <motion.section
@@ -42,7 +43,7 @@ function Contact() {
             }
         }
         >
-            <h3 className='contact__title'>Contact Me</h3>
+            <h3 className='contact__title' id='contact'>Contact Me</h3>
             <form className='contact__form' action='' onSubmit={handleSubmit(submit)}>
 
                 <input className='contact__form__email' type="email" 
@@ -53,18 +54,18 @@ function Contact() {
                 placeholder="your message..." id="" />
 
                 <div className='contact__methods'>
-                    <a className='contact__method'>
+                    <a className='contact__method' href="mailto:yan.datau.dev@gmail.com" >
                         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Gmail_2020.png" alt="" className='contact__method__img' />
                     </a>
                     <a className='contact__method' href='https://www.linkedin.com/in/yandartau/' target='_blank'>
                         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png'
                             alt="" className='contact__method__img' />
                     </a>
-                    <a className='contact__method' >
+                    <a className='contact__method' target='_blank' >
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="" className='contact__method__img' />
                     </a>
                 </div>
-                <p>{errors.email?.message || errors.emailBody?.message}</p>
+                <p className='contact__error-message'>{errors.email?.message || errors.emailBody?.message}</p>
                 <button className='contact__form__btn'>
                     connect !
                 </button>

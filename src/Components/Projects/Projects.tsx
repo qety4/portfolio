@@ -1,13 +1,15 @@
 import React from 'react'
 import './projects.styles.scss'
 import Project from '../Project/Project.component'
-import { clothingStore} from '../../assets/textFiles/projectDesc'
+import { clothingStore } from '../../assets/textFiles/projectDesc'
 import { motion } from 'framer-motion'
+import Divider from '../Divider/Divider'
 
 function Projects() {
     return (
         <>
-            <section className='projects'>
+            <Divider id='projects'/>
+            <section  className='projects'>
                 <motion.h3 className='projects__title'
                     variants={{
                         hidden: { opacity: 0, y: 0 },

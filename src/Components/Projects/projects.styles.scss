@@ -69,10 +69,9 @@
 
 
             .project__desc-container {
-                min-height: fit-content;
-                max-height: 30%;
+                height: 30%;
                 overflow: hidden;
-                width: 51%;
+                width: 50.5%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -82,17 +81,18 @@
                 box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.096);
                 padding: 0.3% 0.8% 0.3% 0.8%;
                 border-radius: 4px;
-                background-color: rgba(245, 245, 245, 0.96);
+                background-color: rgb(113, 107, 178);
                 transition-delay: 3s;
-
+                color: rgb(240, 240, 240);
                 &:hover {
                     overflow: scroll;
                 }
 
 
                 .project__desc {
-                    line-height: 1.38rem;
+                    line-height: 1.5em;
                     font-size: 105%;
+                    font-size: clamp(90%, 1vw, 108%);
                     letter-spacing: 0.07rem;
                 }
 
@@ -101,6 +101,7 @@
                     top: 3%;
                     right: 2.8%;
                     height: 1.8em;
+                    height: clamp(1.5em,0.8vw, 1.8em);
                 }
             }
         }
@@ -111,7 +112,6 @@
         display: flex;
         justify-content: center;
         margin: 0.8rem 0rem 0 0rem;
-        // font-size: 100%;
         font-size: clamp(70%, 1vw, 100%);
         width: 100%;
         list-style: none;
@@ -134,52 +134,14 @@
 
 
                 .project__img {
-                    width: 70%;
+                    width: 80%;
                 }
 
                 .project__desc-container {
-                    width: 70%;
+                    width: 80.5%;
                 }
 
             }
         }
     }
 }
-
-//     @media (min-width:$responsivePageS) and (max-width:$responsivePageM) {
-
-//         .project-container {
-//             margin: 0 0 18vh 0;
-
-
-
-//             .project__desc-container {
-//                 max-height: 40%;
-//                 bottom: 0;
-
-//                 .project__title {
-//                     height: 30%;
-//                     letter-spacing: 0;
-//                     font-size: 120%;
-//                     margin: 0 0 0.19rem 0;
-//                 }
-//                 .project__a {
-//                     line-height: 0.5rem;
-//                     font-size: 50%;
-//                 }
-
-//             }
-
-
-//             .project__stack {
-//                 font-size: 0.8rem;
-//                 margin: 0;
-//                 width: 80%;
-
-//             }
-
-
-//         }
-
-//     }
-// }

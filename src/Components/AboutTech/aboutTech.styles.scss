@@ -30,11 +30,13 @@
 
             .prof {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont;
-                font-size: clamp(1.3rem, 3vw, 2.3rem);
+                font-size: clamp(1.4rem, 3vw, 2.3rem);
                 font-weight: 300;
                 text-transform: uppercase;
                 letter-spacing: 0.3rem;
                 text-shadow: 0.1px 0.18px 1.8px rgba(0, 0, 0, 0.267);
+                cursor: pointer;
+                white-space: nowrap;
             }
 
 
@@ -52,7 +54,7 @@
                 letter-spacing: 0.11em;
                 font-weight: 300;
                 line-height: 103%;
-                font-size: clamp(1rem, 2vw, 1.8rem);
+                font-size: clamp(1.05rem, 2vw, 1.8rem);
                 margin: 0 0 .7rem 0;
                 text-shadow: 0.18px 0.1px 1.8px rgba(88, 88, 88, 0.071);
             }
@@ -70,16 +72,15 @@
             .github-link {
                 position: absolute;
                 box-sizing: content-box;
-                right: -2em // calc((60% - (18rem + 0.2% )) / 2)
+                right: -2.3em // calc((60% - (18rem + 0.2% )) / 2)
                 ;
                 bottom: 10%;
                 height: 2.38em;
-
+                
                 .github-img {
                     border-radius: 50%;
                     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.096);
                     height: 100%;
-                    width: 100%;
                     object-fit: fill;
                     transition: linear .3s;
 

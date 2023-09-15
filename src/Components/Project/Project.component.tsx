@@ -12,8 +12,8 @@ function Project({ projectInfo }: { projectInfo: ProjectInfo }) {
         target: ref,
         offset: ['0 1', '1.33 1']
     })
-    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.98, 1])
-    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.1, 1])
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.93, 1])
+    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0, 1])
 
     return (
 

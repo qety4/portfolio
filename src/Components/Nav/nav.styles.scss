@@ -1,11 +1,7 @@
 .nav{
     width: 100%;
     position: fixed;
-    z-index: -100;
-    // display: flex;
-    // justify-content: center;
-    // align-items: flex-start;
-    // height: 1vh;
+    z-index: 10;
 
     .nav-categories{
         list-style-type: none;
@@ -20,9 +16,10 @@
             text-align: center;
             width: 20%;
             cursor: pointer;
-
+            transition: .1s linear;
+            text-shadow: 0.3px 0.8px 1.3px rgba(113, 107, 178, 0.105);
             &:hover{
-                color: rgb(45, 45, 45);
+                color: rgb(121, 121, 121);
             }
         }
     }
