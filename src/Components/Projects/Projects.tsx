@@ -1,7 +1,7 @@
 import React from 'react'
 import './projects.styles.scss'
 import Project from '../Project/Project.component'
-import { clothingStore } from '../../assets/textFiles/projectDesc'
+import { clothingStore,itemslist,roomsChat } from '../../assets/textFiles/projectDesc'
 import { motion } from 'framer-motion'
 import Divider from '../Divider/Divider'
 
@@ -24,9 +24,9 @@ function Projects() {
                     My Projects
                 </motion.h3>
 
+                <Project projectInfo={roomsChat} />
                 <Project projectInfo={clothingStore} />
-                <Project projectInfo={clothingStore} />
-                <Project projectInfo={clothingStore} />
+                <Project projectInfo={itemslist} />
                 <Project projectInfo={clothingStore} />
 
             </section>

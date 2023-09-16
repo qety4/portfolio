@@ -46,7 +46,6 @@
 
 
             .project__title {
-                margin: 0 0 0.18% 0;
                 font-size: clamp(1.3rem, 2vw, 190%);
                 text-align: center;
                 letter-spacing: 0.25em;
@@ -59,7 +58,7 @@
             }
 
             .project__img {
-                width: 51%;
+                width: 52%;
                 aspect-ratio: 1.13/0.73;
                 border-radius: 0.3rem;
                 box-shadow: 0 3px 8px rgba(106, 106, 106, 0.051);
@@ -71,7 +70,7 @@
             .project__desc-container {
                 height: 30%;
                 overflow: hidden;
-                width: 50.5%;
+                width: 51.5%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;

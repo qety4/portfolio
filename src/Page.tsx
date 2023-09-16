@@ -1,6 +1,6 @@
 import AboutName from './Components/AboutName/AboutName.component'
 import Nav from './Components/Nav/Nav'
-import './Page.scss'
+import './page.styles.scss'
 import AboutTech from './Components/AboutTech/AboutTech.component'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'

@@ -27,9 +27,13 @@ function Contact() {
         resolver: zodResolver(contactValidator),
     })
 
+    const sendEmail = async (email:string,emailBody:string)=>{
+        
+    }
 
-    const submit =()=>{
-
+    const submit = async (formData:FormData)=>{
+        await sendEmail(formData.email,formData.emailBody)
+        reset()
     }
     
 

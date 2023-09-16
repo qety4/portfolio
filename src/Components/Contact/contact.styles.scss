@@ -63,17 +63,12 @@
             background: none;
             border: rgba(0, 0, 0, 0.645) 0.1px solid;
             letter-spacing: .105rem;
-            transition: ease-in-out .9s;
+            transition: ease-out .9s;
             cursor: pointer;
             &:hover{
                 box-shadow: 0 2.8px 4px rgba(116, 105, 234, 0.113);
                 scale: 1.01;
             }
-            // &:active{
-            //     background-color: rgba(116, 105, 234, 0.525) ;
-            //     color: rgba(245, 245, 245, 0.806);
-            //     box-shadow: 0 1.8px 3px rgba(116, 105, 234, 0.113);
-            // }
         }
         .contact__error-message{
             position: absolute;
