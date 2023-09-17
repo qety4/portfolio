@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import cv from '../../assets/CV.png'
+import cv from '../../assets/cv.png'
 import png from '../../assets/svg/png.svg'
 
 function CvLinks() {
@@ -16,7 +16,7 @@ function CvLinks() {
     whileInView='visible'
     transition={{ duration: 1.3, delay: 1.5, }}
     >
-      <a href={cv} className='cv-download__btn' download="yan-dartau-cv.png">
+      <a href={cv} className='cv-download__btn' download="yan.dartau-cv.png">
         <div className='cv-download__text'>
           <p>Download my CV !
           </p>
