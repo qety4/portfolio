@@ -5,7 +5,7 @@ import png from '../../assets/svg/png.svg'
 import VariationsContainer from '../VariationsContainer/VariationsContainer'
 import WebDevContainer from '../WebDevContainer/WebDevContainer'
 import { motion } from 'framer-motion'
-
+import cv from '../../assets/CV.png'
 const AboutTech = () => {
   return (
 
@@ -20,7 +20,7 @@ const AboutTech = () => {
         viewport={{ once: true }}
         initial='hidden'
         whileInView='visible'
-        transition={{ duration: 1.8, delay: 0.8, }}
+        transition={{ duration: 1.8, delay: 0.3, }}
 
       >
         <div className='about-tech__prof'>
@@ -44,9 +44,9 @@ const AboutTech = () => {
           viewport={{ once: true }}
           initial='hidden'
           whileInView='visible'
-          transition={{ duration: 0.8, delay: 1, }}
+          transition={{ duration: 0.8, delay: 0.5, }}
           >
-            <a href="assets/wink.jpg" className='cv-download__btn' download>
+            <a href={cv} className='cv-download__btn' download>
               <div className='cv-download__text'>
                 <p>Download my CV !
                 </p>

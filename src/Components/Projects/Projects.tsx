@@ -23,11 +23,9 @@ function Projects() {
                     <p>some of</p>
                     My Projects
                 </motion.h3>
-
                 <Project projectInfo={roomsChat} />
                 <Project projectInfo={clothingStore} />
                 <Project projectInfo={itemslist} />
-                <Project projectInfo={clothingStore} />
 
             </section>
         </>

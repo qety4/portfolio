@@ -9,7 +9,7 @@ const AboutName = () => {
     <div className='about-name' >
       <motion.div className='about-name__text'
         variants={{
-          hidden: { opacity: 0, y: 10, x: -2.8 },
+          hidden: { opacity: 0, y: 13, x: -1.8 },
           visible: { opacity: 1, y: 0,x:0 },
       }}
       viewport={{once:true}}
@@ -22,7 +22,7 @@ const AboutName = () => {
 
         <div className='about-name__about'>
           Inspired by challenges, motivated by learning.
-          <br />Always learning and improving !
+          <br /><b>Always learning and improving !</b>
         </div>
 
         <p className='web-dev-text'>
@@ -33,7 +33,7 @@ const AboutName = () => {
 
       <motion.div className='about-name__image'
         variants={{
-          hidden: { opacity: 0, y: 10,x:2.8},
+          hidden: { opacity: 0, y: 13,x:1.8},
           visible: { opacity: 1, y: 0, x:0 },
           exit:{opacity:0}
       }}

@@ -1,49 +1,68 @@
 
+import { useRef } from 'react'
 import link from '../../assets/svg/external-link.svg'
 import { ProjectInfo } from '../../types/types'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 
 function Project({ projectInfo }: { projectInfo: ProjectInfo }) {
-    const { title, about, stack, projectImg, url } = projectInfo
+    const ref = useRef<HTMLElement>(null)
+    const { title, about, stack, projectImg, url, githubUrl } = projectInfo
+
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ['0 1', '1.33 1']
+    })
+
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.93, 1])
+    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.3, 1])
 
     return (
 
-        <motion.section className='project-container'
-            variants={{
-                hidden: { opacity: 0.3, y: 20, x: 0 },
-                visible: { opacity: 1, y: 0, x: 0 },
-            }}
-            viewport={{ once: true }}
-            initial='hidden'
-            whileInView='visible'
-            transition={{ duration: 1.9, delay: 0.2 }}
+        <motion.section
+            ref={ref}
+            style={
+                {
+                    scale: scaleProgress,
+                    opacity: opacityProgress,
+                }
+            }
         >
-            <span className='project'>
-                <p className='project__title'>
-                    {title}
-                </p>
-                <img className='project__img ' src={projectImg} alt="" />
-                <div className='project__desc-container'>
+            <div className='project-container'>
 
-                    <p className='project__desc'>
-                        {about}
+                <span className='project'>
+                    <p className='project__title'>
+                        {title}
                     </p>
+                    <img className='project__img ' src={projectImg} alt="" />
+                    <div className='project__desc-container'>
 
-                    <ul className='project__stack'>
-                        {
-                            stack.map((item) =>
-                                <li key={item}>{item}</li>
-                            )
-                        }
-                    </ul>
-                    <a href={url} target='_blank'>
-                        <img className="project__link" src={link} alt="" />
-                    </a>
-                </div>
+                        <p className='project__desc'>
+                            {about}
+                        </p>
 
-            </span>
+                        <ul className='project__stack'>
+                            {
+                                stack.map((item) =>
+                                    <li key={item}>{item}</li>
+                                )
+                            }
+                        </ul>
+                    </div>
+                    <div className='project__redirects'>
 
+                        <a href={url} target='_blank'>
+                            <img className="project__link" src={link} alt="" />
+                        </a>
+
+                        <a href={githubUrl} target='_blank'>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" className='project_github' alt="" />
+                        </a>
+
+                    </div>
+
+                </span>
+            </div>
 
         </motion.section>
 

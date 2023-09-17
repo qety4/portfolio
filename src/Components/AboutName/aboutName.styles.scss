@@ -10,13 +10,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .about-name__image {
         display: flex;
         align-items: center;
-        margin: 0 8% 0 0;
+        margin: 0 3% 0 0;
+
         .about__image {
             width: 11.8em;
-            aspect-ratio: 1/1.5;
+            aspect-ratio: 1/1.4;
             border-radius: 1.1em;
             box-shadow: 1.3px 1.8px 2.3px rgba(113, 107, 178, 0.152);
         }
@@ -27,9 +29,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 20rem;
+        width: 23rem;
         position: relative;
-        // margin: 0 0 0 5%;
+        margin-top: 10.5vh;
+
         .about-name__name {
             font-family: 'Public Sans';
             color: rgb(6, 10, 36);
@@ -38,7 +41,6 @@
             font-size: clamp(1.7rem, 3.1vw, 180%);
             font-weight: 200;
             letter-spacing: 0.05rem;
-            margin: 0 0 0rem 0;
             text-shadow: 0.3px 0.8px 1.8px rgba(0, 0, 0, 0.205);
             box-sizing: content-box;
 
@@ -56,10 +58,16 @@
             line-height: 1em;
             word-wrap: break-word;
             text-align: center;
-            font-size: clamp(1.1rem, 2.3vw, 170%);
+            margin: 0.03em 0 0 0;
+            font-size: clamp(1.2rem, 2.3vw, 170%);
             font-weight: 300;
-            font-family: 'Public Sans';
+            font-family: sans-serif;
             text-shadow: 0.7px 0.8px 1.3px rgba(91, 91, 91, 0.092);
+
+            b {
+                font-weight: 300;
+                text-shadow: 0.3px 0.8px 1.3px rgba(91, 91, 91, 0.107);
+            }
 
         }
 
@@ -69,9 +77,10 @@
             align-items: flex-end;
             justify-content: center;
             height: 1.3rem;
-            margin-top: 5%;
-            font-family: 'Public Sans';
+            margin-top: 0.7em;
+            font-family: sans-serif;
             white-space: nowrap;
+
             b {
                 text-transform: uppercase;
                 position: relative;
