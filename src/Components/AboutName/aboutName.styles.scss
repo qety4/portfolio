@@ -37,7 +37,7 @@
             color: rgb(6, 10, 36);
             text-align: center;
             width: 100%;
-            font-size: clamp(1.7rem, 3.1vw, 180%);
+            font-size: clamp(1.4rem, 3.1vw, 180%);
             font-weight: 200;
             letter-spacing: 0.05rem;
             text-shadow: 0.3px 0.8px 1.8px rgba(0, 0, 0, 0.205);
@@ -58,7 +58,7 @@
             word-wrap: break-word;
             text-align: center;
             margin: 0.03em 0 0 0;
-            font-size: clamp(1.2rem, 2.4vw, 170%);
+            font-size: clamp(1.15rem, 2.4vw, 170%);
             font-weight: 300;
             font-family: sans-serif;
             text-shadow: 0.7px 0.8px 1.3px rgba(91, 91, 91, 0.092);
@@ -83,7 +83,7 @@
             b {
                 text-transform: uppercase;
                 position: relative;
-                font-size: clamp(1.05rem, 2vw, 138%);
+                font-size: clamp(0.9rem, 2vw, 138%);
                 letter-spacing: 0.19em;
                 color: rgb(0, 0, 0);
                 font-weight: 300;
@@ -99,6 +99,7 @@
         }
         .about-name__text {
             margin-top: 1.8rem;
+            width: 20rem;
 
             .about-name__about {
                 line-height: 1.38rem;

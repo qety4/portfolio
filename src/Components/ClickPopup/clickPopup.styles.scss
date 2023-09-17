@@ -10,11 +10,12 @@
         line-height: 0.5rem;
         display: inline-block;
     }
+    
     @media (max-width:$responsivePageM) {
         top: -3%;
         right: calc((100% - 12 * 3rem) / 2) ;
     }
     @media (max-width:$responsivePageS){
-       right: calc((100% - 12 * 1.8rem) / 2) ;
+       right: calc((100% - 12 * 1.73rem) / 2) ;
     }
 }

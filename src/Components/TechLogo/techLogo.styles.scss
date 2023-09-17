@@ -15,6 +15,14 @@
     }
 }
 
+
+@media (min-width:$responsivePageS) and (max-width:($responsivePageM + 20rem)){
+    .tech-logo{
+        height: 2.3em;
+        width: 2.3em;
+    }
+}
+
 @media (max-width:$responsivePageS) {
     .tech-logo{
         height: 1.9em;
@@ -22,9 +30,9 @@
     }
 }
 
-@media (min-width:$responsivePageS) and (max-width:($responsivePageM + 20rem)){
+@media (max-width: ($responsivePageS - 8rem)) {
     .tech-logo{
-        height: 2.3em;
-        width: 2.3em;
+        height: 1.3em;
+        width: 1.3em;
     }
 }
