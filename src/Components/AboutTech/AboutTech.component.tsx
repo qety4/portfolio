@@ -44,7 +44,7 @@ const AboutTech = () => {
           viewport={{ once: true }}
           initial='hidden'
           whileInView='visible'
-          transition={{ duration: 0.8, delay: 0.5, }}
+          transition={{ duration: 1.3, delay: 1.5, }}
           >
             <a href={cv} className='cv-download__btn' download>
               <div className='cv-download__text'>

@@ -86,7 +86,7 @@ function Contact() {
                             <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png'
                                 alt="" className='contact__method__img' />
                         </a>
-                        <a className='contact__method' target='_blank' >
+                        <a className='contact__method' href='https://t.me/ldnny' target='_blank' >
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="" className='contact__method__img' />
                         </a>
                     </div>

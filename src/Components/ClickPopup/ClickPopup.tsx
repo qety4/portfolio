@@ -16,7 +16,7 @@ function ClickPopup() {
             initial='hidden'
             whileInView='visible'
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
         >
             <p>
                 click !

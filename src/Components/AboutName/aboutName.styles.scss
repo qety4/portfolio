@@ -14,25 +14,23 @@
     .about-name__image {
         display: flex;
         align-items: center;
-        margin: 0 3% 0 0;
+
+        margin: 0 3.1% 0 0;
 
         .about__image {
             width: 11.8em;
             aspect-ratio: 1/1.4;
             border-radius: 1.1em;
-            box-shadow: 1.3px 1.8px 2.3px rgba(113, 107, 178, 0.152);
+            box-shadow: 0.3px 2px 2.3px rgba(113, 107, 178, 0.152);
         }
-    }
-
+    } 
     .about-name__text {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
         width: 23rem;
         position: relative;
-        margin-top: 10.5vh;
-
+        margin-top: 5vh;
         .about-name__name {
             font-family: 'Public Sans';
             color: rgb(6, 10, 36);
@@ -59,7 +57,7 @@
             word-wrap: break-word;
             text-align: center;
             margin: 0.03em 0 0 0;
-            font-size: clamp(1.2rem, 2.3vw, 170%);
+            font-size: clamp(1.2rem, 2.4vw, 170%);
             font-weight: 300;
             font-family: sans-serif;
             text-shadow: 0.7px 0.8px 1.3px rgba(91, 91, 91, 0.092);
