@@ -1,5 +1,5 @@
-// import { motion, useAnimation, useInView } from 'framer-motion'
-import React, { useState } from 'react'
+
+import { useState } from 'react'
 import TechStack from '../TechStack/TechStack.component'
 import './webDevContainer.styles.scss'
 import { AnimatePresence, motion } from 'framer-motion'

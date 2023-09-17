@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import './contact.styles.scss'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -44,6 +44,7 @@ function Contact() {
                 )
                 reset()
                 toast.success(`
+
                 email sent
                 
                 `)
@@ -52,7 +53,6 @@ function Contact() {
                 return
             }
         } catch (e) {
-            console.log(e)
             setError('email', { message: 'error sending email' })
         }
     }

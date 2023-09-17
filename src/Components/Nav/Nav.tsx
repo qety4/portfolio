@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './nav.styles.scss'
 import { Link } from 'react-scroll'
 

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './divider.styles.scss'
 
 function Divider({id}:{id:string}) {

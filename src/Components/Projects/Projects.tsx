@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './projects.styles.scss'
 import Project from '../Project/Project.component'
 import { clothingStore,itemslist,roomsChat } from '../../assets/textFiles/projectDesc'

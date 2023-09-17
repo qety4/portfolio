@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './techName.styles.scss'
 import { motion } from 'framer-motion'
 

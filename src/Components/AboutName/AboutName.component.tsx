@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './aboutName.styles.scss'
 import { motion } from 'framer-motion'
 import PersonalPhoto from '../../assets/projectImg/personal-photo.jpeg'

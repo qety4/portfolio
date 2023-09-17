@@ -13,12 +13,12 @@ function Page() {
     <>
       <Nav />
       <main className='home-page'>
-          <div className='about'>
+          <section className='about'>
 
             <AboutName />
             <AboutTech />
 
-          </div>
+          </section>
 
           <Projects />
 
