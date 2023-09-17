@@ -25,6 +25,7 @@
             transform: rotate(180deg);
             letter-spacing: 0.1em;
             font-size: clamp(0.8em,0.8vw,1em);
+            pointer-events: all;
         }
     }
 }
