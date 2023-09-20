@@ -8,13 +8,13 @@ function CvLinks() {
 
     <motion.div className='cv-download-container'
      variants={{
-      hidden: { opacity: 0, y: 3, x: 0 },
+      hidden: { opacity: 0, y: 1.8, x: 0 },
       visible: { opacity: 1, y: 0, x: 0 },
     }}
     viewport={{ once: true }}
     initial='hidden'
     whileInView='visible'
-    transition={{ duration: 1.3, delay: 1.5, }}
+    transition={{ duration: 1.3, delay: 1.3, }}
     >
       <a href={cv} className='cv-download__btn' download="yan.dartau-cv.png">
         <div className='cv-download__text'>

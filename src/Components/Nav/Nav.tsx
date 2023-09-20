@@ -34,10 +34,6 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-        {/* <div className='nav-logo'>
-          Yan Dartau
-          (web dev)
-        </div> */}
       </nav>
     </>
   )

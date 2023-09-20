@@ -16,11 +16,11 @@ function WebDevContainer() {
                 onClick={() => setOpen((prev) => !prev)}>
                 Web Developer
             </p>
-            <ClickPopup/>
+            <ClickPopup />
             <AnimatePresence>
                 {isOpen &&
                     <>
-                        <div className='webdev-overlay' onClick={() => setOpen((prev) => !prev)}/>
+                        <div className='webdev-overlay' onClick={() => setOpen((prev) => !prev)} />
                         <motion.div
 
                             className='techstack-popover'
@@ -31,6 +31,11 @@ function WebDevContainer() {
                             exit='exit'
                         >
                             <TechStack bg={false} />
+                            <div className='close-btn-container'>
+                                <button onClick={() => setOpen((prev) => !prev)} className='close-btn'>
+                                    &#10005;
+                                </button>
+                            </div>
                         </motion.div>
                     </>
                 }

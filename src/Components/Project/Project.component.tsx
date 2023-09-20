@@ -31,34 +31,34 @@ function Project({ projectInfo }: { projectInfo: ProjectInfo }) {
             <div className='project-container'>
 
                 <span className='project'>
-                    <p className='project__title'>
-                        {title}
-                    </p>
+                    <div className='project__title'>
+                        <p className='project__title-text'>{title}
+                        </p>
+                        <div className='project__redirects'>
+                            <a href={githubUrl} target='_blank'>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" className='project_github' alt="" />
+                            </a>
+                            <a href={url} target='_blank'>
+                                <img className="project__link" src={link} alt="" />
+                            </a>
+                        </div>
+                    </div>
+
                     <img className='project__img ' src={projectImg} alt="" />
                     <div className='project__desc-container'>
+                        <div className='project__desc'>
+                            <p className='project__desc__about'>
+                                {about}
+                            </p>
 
-                        <p className='project__desc'>
-                            {about}
-                        </p>
-
-                        <ul className='project__stack'>
-                            {
-                                stack.map((item) =>
-                                    <li key={item}>{item}</li>
-                                )
-                            }
-                        </ul>
-                    </div>
-                    <div className='project__redirects'>
-
-                        <a href={url} target='_blank'>
-                            <img className="project__link" src={link} alt="" />
-                        </a>
-
-                        <a href={githubUrl} target='_blank'>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" className='project_github' alt="" />
-                        </a>
-
+                            <ul className='project__desc__stack'>
+                                {
+                                    stack.map((item) =>
+                                        <li key={item}>{item}</li>
+                                    )
+                                }
+                            </ul>
+                        </div>
                     </div>
 
                 </span>
