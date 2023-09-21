@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion'
-import TechStack from '../TechStack/TechStack.component'
+import TechStack from '../TechStack/TechStack'
 import VariationsContainer from '../VariationsContainer/VariationsContainer'
 import WebDevContainer from '../WebDevContainer/WebDevContainer'
 import CvLinks from './CvLinks'
@@ -30,7 +30,7 @@ const AboutTech = () => {
 
         <div className='about-tech__text-container'>
           <p className='about-tech__text'>
-            I focus on creating highly functional, visually appealing web applications. Taking projects from onset, to complete functionality, with consistent key communication at every step !
+            Focusing on creating highly functional, visually appealing web applications. Taking projects from onset, to complete functionality, with consistent key communication at every step !
           </p>
         </div>
 

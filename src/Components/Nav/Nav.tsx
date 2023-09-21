@@ -1,11 +1,35 @@
 
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 import './nav.styles.scss'
 import { Link } from 'react-scroll'
+import { useState } from 'react'
+import Sides from '../Sides/Sides'
 
 const Nav = () => {
+  const { scrollY } = useScroll()
+  const [hidden, setHidden] = useState(false)
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    const previous = scrollY.getPrevious()
+    if (Number(latest) > previous && latest > 10) {
+      setHidden(true)
+    }
+    else {
+      setHidden(false)
+    }
+  })
+
+
   return (
     <>
-      <nav className='nav'>
+      <motion.nav className='nav'
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: '-100%' }
+        }}
+        animate={hidden ? 'hidden' : 'visible'}
+        transition={{ duration: 0.23, ease: 'easeIn' }}
+      >
         <ul className='nav-categories'>
           <li>
             <Link to='about'
@@ -34,7 +58,8 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-      </nav>
+      </motion.nav>
+        <Sides hidden={hidden} />
     </>
   )
 }

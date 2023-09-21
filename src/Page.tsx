@@ -1,10 +1,9 @@
-import AboutName from './Components/AboutName/AboutName.component'
+import AboutName from './Components/AboutName/AboutName'
 import Nav from './Components/Nav/Nav'
 import './page.styles.scss'
-import AboutTech from './Components/AboutTech/AboutTech.component'
+import AboutTech from './Components/AboutTech/AboutTech'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact'
-import Sides from './Components/Sides/Sides'
 
 
 function Page() {
@@ -24,7 +23,6 @@ function Page() {
 
           <Contact />
 
-          <Sides/>
       </main>
     </>
   )

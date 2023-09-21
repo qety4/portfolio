@@ -1,15 +1,15 @@
 
 import './projects.styles.scss'
-import Project from '../Project/Project.component'
-import { clothingStore,itemslist,roomsChat } from '../../assets/textFiles/projectDesc'
+import Project from '../Project/Project'
+import { clothingStore, itemslist, roomsChat } from '../../assets/textFiles/projectDesc'
 import { motion } from 'framer-motion'
 import Divider from '../Divider/Divider'
 
 function Projects() {
     return (
         <>
-            <Divider id='projects'/>
-            <section  className='projects'>
+            <Divider id='projects' />
+            <section className='projects'>
                 <motion.h3 className='projects__title'
                     variants={{
                         hidden: { opacity: 0, y: 0 },
@@ -23,8 +23,9 @@ function Projects() {
                     <p>some of</p>
                     My Projects
                 </motion.h3>
-                <Project projectInfo={roomsChat} />
+
                 <Project projectInfo={clothingStore} />
+                <Project projectInfo={roomsChat} />
                 <Project projectInfo={itemslist} />
 
             </section>

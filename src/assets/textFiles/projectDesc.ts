@@ -5,7 +5,7 @@ import itemslistimg from '../projectImg/itemslist.png'
 
 export const roomsChat:ProjectInfo = {
     projectImg:roomsChatimg,
-    title: 'Rooms',
+    title: 'Chat-Rooms',
     about: `Real time chat app, where you can create a user, create chat rooms, 
     join them and chat with real time functionality,
     made using NextJs, TypeScript,

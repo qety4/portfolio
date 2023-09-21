@@ -1,5 +1,5 @@
 
-import TechLogo from '../TechLogo/TechLogo.component'
+import TechLogo from '../TechLogo/TechLog'
 import TechName from '../TechName/TechName'
 import './techStack.styles.scss'
 import { techStack } from '../../assets/textFiles/techStack.text'

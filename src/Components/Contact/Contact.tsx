@@ -5,8 +5,9 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { contactValidator } from '../../validators/contactValidator'
-import emailjs from '@emailjs/browser'
+import emailjs  from '@emailjs/browser'
 import toast from 'react-hot-toast'
+import send from '../../assets/svg/send.svg'
 
 type FormData = z.infer<typeof contactValidator>
 
@@ -92,7 +93,7 @@ function Contact() {
                     </div>
                     <p className={`contact__error-message ${sent ? 'success' : ''} `}>{errors.emailBody?.message}</p>
                     <button className='contact__form__btn'>
-                        connect !
+                        <img src={send} alt="" />
                     </button>
 
                 </form>

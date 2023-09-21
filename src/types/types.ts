@@ -1,3 +1,5 @@
+import React from "react"
+
 export type ProjectInfo = {
     projectImg: string,
     title: string,
@@ -5,4 +7,10 @@ export type ProjectInfo = {
     stack: string[],
     url:string,
     githubUrl: string
+}
+
+export type ModalProps = {
+    projectInfo : ProjectInfo,
+    isOpen: boolean,
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>
 }

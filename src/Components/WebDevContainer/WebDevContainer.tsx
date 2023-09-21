@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import TechStack from '../TechStack/TechStack.component'
+import TechStack from '../TechStack/TechStack'
 import './webDevContainer.styles.scss'
 import { AnimatePresence, motion } from 'framer-motion'
 import ClickPopup from '../ClickPopup/ClickPopup'

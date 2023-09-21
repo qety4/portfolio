@@ -1,14 +1,14 @@
 .sides {
-    width: 96.5%;
+    width: 98vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    bottom: 13%;
-    height: 20%;
+    bottom: 1vh;
+    height: 100%;
     max-height: 30%;
     pointer-events: none;
-    z-index: 100;
+    z-index: 120;
     box-sizing: border-box;
     .sides__email {
         position: absolute;

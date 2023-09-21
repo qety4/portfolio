@@ -1,14 +1,23 @@
 
+import { motion } from 'framer-motion'
 import './sides.styles.scss'
 
-function Sides() {
+function Sides({ hidden }: { hidden: boolean }) {
+
     return (
         <div className='sides'>
-            <div className='sides__email'>
+            <motion.div className='sides__email'
+                variants={{
+                    visible: { scale: 1.1 },
+                    hidden: { scale: 0.8 }
+                }}
+                animate={hidden ? 'hidden' : 'visible'}
+                transition={{ duration: 0.7, ease: 'linear' }}
+            >
                 <p className='sides__email__text'>
                     yan.dartau.dev@gmail.com
                 </p>
-            </div>
+            </motion.div>
         </div>
     )
 }

@@ -60,13 +60,16 @@
             border-radius: 10px;
             margin-top: 0.18rem;
             font-size: 1.7rem;
-            padding: 0.15em 0.28em 0.15em 0.28em ;
+            padding: 0.203em 0.28em 0.203em 0.28em ;
             width: 100%;
             background: none;
             border: rgba(0, 0, 0, 0.645) 0.1px solid;
-            letter-spacing: .105rem;
+            letter-spacing: .08rem;
             transition: ease-out .9s;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             &:hover{
                 box-shadow: 0 2.8px 4px rgba(116, 105, 234, 0.113);
                 scale: 1.01;
@@ -107,7 +110,7 @@
                 transition: .3s linear;
                 
                 &:hover {
-                    box-shadow: 0 1.9px 8px rgba(91, 85, 157, 0.308);
+                    box-shadow: 0 1.9px 8px rgba(156, 98, 255, 0.181);
 
                 }
             }
