@@ -18,7 +18,7 @@ function CvLinks() {
     >
       <a href={cv} className='cv-download__btn' download="yan_dartau_-web_developer.pdf">
         <div className='cv-download__text'>
-          <p>Download my CV !
+          <p>Download my CV
           </p>
           <img className="cv-download__img" src={pdf} alt="" />
         </div>
