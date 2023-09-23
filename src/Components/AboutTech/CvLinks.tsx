@@ -16,7 +16,7 @@ function CvLinks() {
     whileInView='visible'
     transition={{ duration: 1.3, delay: 1.6, }}
     >
-      <a href={cv} className='cv-download__btn' download="yan_dartau_-web_developer.pdf">
+      <a href={cv} className='cv-download__btn' download="yan_dartau-web_developer.pdf">
         <div className='cv-download__text'>
           <p>Download my CV
           </p>

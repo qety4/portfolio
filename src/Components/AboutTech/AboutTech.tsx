@@ -30,7 +30,7 @@ const AboutTech = () => {
 
         <div className='about-tech__text-container'>
           <p className='about-tech__text'>
-            Focusing on creating highly functional, visually appealing web applications. Taking projects from onset, to complete functionality, with consistent key communication at every step !
+            Creating highly functional, visually appealing web applications. Taking projects from onset, to complete functionality, with consistent key communication at every step !
           </p>
         </div>
 
