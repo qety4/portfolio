@@ -28,7 +28,7 @@ const Nav = () => {
           hidden: { y: '-100%' }
         }}
         animate={hidden ? 'hidden' : 'visible'}
-        transition={{ duration: 0.23, ease: 'easeIn' }}
+        transition={{ duration: 0.31, ease: 'easeIn' }}
       >
         <ul className='nav-categories'>
           <li>

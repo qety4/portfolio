@@ -8,8 +8,8 @@ function Sides({ hidden }: { hidden: boolean }) {
         <div className='sides'>
             <motion.div className='sides__email'
                 variants={{
-                    visible: { scale: 1.1 },
-                    hidden: { scale: 0.8 }
+                    visible: { scale: 1 },
+                    hidden: { scale: 0.9 }
                 }}
                 animate={hidden ? 'hidden' : 'visible'}
                 transition={{ duration: 0.7, ease: 'linear' }}
