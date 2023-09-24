@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion"
 
-import { ModalProps } from '../../../types/types'
+import { ModalProps } from '../../types/types'
 import './ProjectModal.styles.scss'
+import CloseBtn from "../CloseBtn/CloseBtn"
 
 
 
@@ -44,13 +45,7 @@ function ProjectModal({ modalProps }: { modalProps: ModalProps }) {
                             </ul>
 
                         </div>
-                        <div className='close-btn-container'>
-                            <button onClick={() => setOpen(false)} className='close-btn'>
-                                &#10005;
-                            </button>
-                        </div>
-
-
+                        <CloseBtn setOpen={setOpen} />
                     </motion.div>
                 </>
             }

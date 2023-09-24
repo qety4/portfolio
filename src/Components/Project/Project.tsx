@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import ProjectModal from './ProjectModal/ProjectModal'
+import ProjectModal from '../ProjectModal/ProjectModal'
 import { ProjectInfo } from '../../types/types'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import link from '../../assets/svg/external-link.svg'

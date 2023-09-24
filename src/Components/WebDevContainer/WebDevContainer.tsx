@@ -4,6 +4,7 @@ import TechStack from '../TechStack/TechStack'
 import './webDevContainer.styles.scss'
 import { AnimatePresence, motion } from 'framer-motion'
 import ClickPopup from '../ClickPopup/ClickPopup'
+import CloseBtn from '../CloseBtn/CloseBtn'
 
 
 function WebDevContainer() {
@@ -31,11 +32,7 @@ function WebDevContainer() {
                             exit='exit'
                         >
                             <TechStack bg={false} />
-                            <div className='close-btn-container'>
-                                <button onClick={() => setOpen((prev) => !prev)} className='close-btn'>
-                                    &#10005;
-                                </button>
-                            </div>
+                            <CloseBtn setOpen={setOpen} />
                         </motion.div>
                     </>
                 }
