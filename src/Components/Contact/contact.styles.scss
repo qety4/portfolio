@@ -1,5 +1,4 @@
-
-.email-succes{
+.email-succes {
     font-size: 2em;
 }
 
@@ -8,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20vh 0 13vh 0 ;
+    margin: 20vh 0 13vh 0;
     width: 100%;
     height: 70vh;
 
@@ -31,6 +30,7 @@
         box-sizing: content-box;
         position: relative;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
         .contact__form__email {
             height: 2.5rem;
             width: 73%;
@@ -41,7 +41,7 @@
             font-size: 1.1rem;
             border: rgba(0, 0, 0, 0.645) 0.1px solid;
         }
-        
+
         .contact__form__text {
             resize: none;
             margin-top: 1.18rem;
@@ -60,7 +60,7 @@
             border-radius: 10px;
             margin-top: 0.18rem;
             font-size: 1.7rem;
-            padding: 0.203em 0.28em 0.203em 0.28em ;
+            padding: 0.203em 0.28em 0.203em 0.28em;
             width: 100%;
             background: none;
             border: rgba(0, 0, 0, 0.645) 0.1px solid;
@@ -70,25 +70,32 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            &:hover{
+
+            &:hover {
                 box-shadow: 0 2.8px 4px rgba(116, 105, 234, 0.113);
-                scale: 1.01;
+                scale: 1.03;
             }
+            &:active{
+                scale: 0.98;
+            }
+
         }
-        .contact__error-message{
+
+        .contact__error-message {
             position: absolute;
             top: -0.1em;
             letter-spacing: 0.13rem;
-            color: red  ;
+            color: red;
             font-size: 1.1rem;
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.039);
             text-transform: lowercase;
         }
-        .success{
+
+        .success {
             color: rgb(10, 174, 10);
             font-size: 1.38rem;
             top: -0.28em;
-            text-shadow: 0px 1.3px 1.8px rgba(0, 128, 0, 0.267) ;
+            text-shadow: 0px 1.3px 1.8px rgba(0, 128, 0, 0.267);
         }
     }
 
@@ -96,22 +103,22 @@
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-        margin-top: 0.1rem;
-
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
         .contact__method {
             height: 2.3rem;
             width: 2.3rem;
-            
+
             .contact__method__img {
                 height: 100%;
                 width: 100%;
                 aspect-ratio: 1/1;
                 border-radius: 50%;
                 transition: .3s linear;
-                
-                &:hover {
-                    box-shadow: 0 1.9px 8px rgba(156, 98, 255, 0.181);
-
+                padding: 0.08em 0.12em 0.12em 0.12em;
+                border: 1px solid rgba(0, 0, 0, 0.193);
+                &:hover{
+                    scale: 0.9;
                 }
             }
         }

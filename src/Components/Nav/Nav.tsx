@@ -1,5 +1,5 @@
 
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
+import { useMotionValueEvent, useScroll } from 'framer-motion'
 import './nav.styles.scss'
 import { Link } from 'react-scroll'
 import { useState } from 'react'
@@ -22,44 +22,41 @@ const Nav = () => {
 
   return (
     <>
-      <motion.nav className='nav'
-        variants={{
-          visible: { y: 0 },
-          hidden: { y: '-100%' }
-        }}
-        animate={hidden ? 'hidden' : 'visible'}
-        transition={{ duration: 0.31, ease: 'easeIn' }}
+      <nav className='nav'
       >
-        <ul className='nav-categories'>
-          <li>
-            <Link to='about'
-              smooth={true}
-              offset={-300}
-              duration={800}
-            >
+        <ul className={`nav-categories ${hidden ? 'hidden' : ''}`}>
+          <Link to='about'
+            className='nav-link'
+            smooth={true}
+            offset={-1000}
+            duration={800}
+          >
+            <p className='nav-link__text'>
               ABOUT
-            </Link>
-          </li>
-          <li>
-            <Link to='projects'
-              smooth={true}
-              duration={800}
-            >
+            </p>
+          </Link>
+          <Link to='projects'
+            className='nav-link'
+            smooth={true}
+            duration={800}
+          >
+            <p className='nav-link__text'>
               PROJECTS
-            </Link>
-          </li>
-          <li>
-            <Link to='contact'
-              smooth={true}
-              offset={-100}
-              duration={800}
-            >
+            </p>
+          </Link>
+          <Link to='contact'
+            className='nav-link'
+            smooth={true}
+            offset={-100}
+            duration={800}
+          >
+            <p className='nav-link__text'>
               CONTACT
-            </Link>
-          </li>
+            </p>
+          </Link>
         </ul>
-      </motion.nav>
-        <Sides hidden={hidden} />
+      </nav>
+      <Sides hidden={hidden} />
     </>
   )
 }

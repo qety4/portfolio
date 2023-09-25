@@ -3,16 +3,16 @@
     right: 1vw;
     top: 4%;
     .close-btn{
-        font-size: 1.2rem;
-        padding: 0.2rem 0.6rem 0.38rem 0.6rem;
+        font-size: 21px;
+        padding: 8px 12px 8px 12px;
         background: none;
-        border: 1.3px solid rgba(90, 90, 90, 0.195);
+        border: 2px solid rgba(90, 90, 90, 0.197);
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.136);
         border-radius: 49%;
         color: rgba(51, 51, 51, 0.855);
         transition: 0.1s linear;
         &:active{
-            background: rgba(191, 191, 191, 0.111);
+            background: rgba(191, 191, 191, 0.199);
             scale: 0.8;
         }
     }
