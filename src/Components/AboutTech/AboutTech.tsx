@@ -9,6 +9,7 @@ import './aboutTech.styles.scss'
 const AboutTech = () => {
   return (
 
+
     <div className='about-tech'>
 
       <motion.div className='about-tech__header'
@@ -40,6 +41,7 @@ const AboutTech = () => {
       </motion.div>
 
       <TechStack bg={true} />
+
 
     </div>
 
