@@ -4,11 +4,12 @@
 .about-name {
     position: relative;
     width: 100%;
-    height: 91vh;
+    height: 100vh;
     box-sizing: content-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1vh;
 
     .about-name__image-container{
         width: 50%;
@@ -87,15 +88,16 @@
 
 
         .web-dev-text {
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
             height: 1.3rem;
             margin-top: 0.7em;
-            font-family: sans-serif;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
             white-space: nowrap;
-
-            b {
+            font-family: sans-serif;
+            box-sizing: border-box;
+            p {
                 text-transform: uppercase;
                 position: relative;
                 font-size: clamp(0.9rem, 2vw, 138%);
@@ -108,7 +110,7 @@
 
     }
 
-    @media (max-width:$responsivePageS) {
+    @media (max-width:($responsivePageS - 10rem)) {
         .about-name__image{
         }
         .about-name__text {

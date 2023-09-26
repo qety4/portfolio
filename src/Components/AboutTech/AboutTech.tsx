@@ -30,7 +30,7 @@ const AboutTech = () => {
 
         <div className='about-tech__text-container'>
           <p className='about-tech__text'>
-          {`Creating Modern Web Applications, with high functionality and responsive design, while following the most progressive principles, if needed :)`}
+          {`Creating Modern Web Apps, with high functionality and responsive design, while following the most progressive principles, if needed :)`}
           </p>
         </div>
 

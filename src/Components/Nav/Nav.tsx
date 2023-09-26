@@ -22,9 +22,9 @@ const Nav = () => {
 
   return (
     <>
-      <nav className='nav'
+      <nav className={`nav ${hidden ? 'hidden' : ''}`}
       >
-        <ul className={`nav-categories ${hidden ? 'hidden' : ''}`}>
+        <ul className='nav-categories'>
           <Link to='about'
             className='nav-link'
             smooth={true}

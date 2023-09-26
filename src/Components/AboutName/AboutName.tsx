@@ -24,20 +24,23 @@ const AboutName = () => {
           <div className='about-name__about'>
             <b>Always learning and improving !</b>
           </div>
+          <div className='web-dev-text'>
+            <p>WEB DEVELOPER</p>
+          </div>
 
         </motion.div>
       </div>
 
       <div className='about-name__image-container'>
         <motion.div className='about-name__image'
-            variants={{
-              hidden: { opacity: 0, y: 9, x:0.3 },
-              visible: { opacity: 1, y: 0, x: 0 },
-            }}
-            viewport={{ once: true }}
-            initial='hidden'
-            whileInView='visible'
-            transition={{ duration: 1, delay: 0.3, }}
+          variants={{
+            hidden: { opacity: 0, y: 9, x: 0.3 },
+            visible: { opacity: 1, y: 0, x: 0 },
+          }}
+          viewport={{ once: true }}
+          initial='hidden'
+          whileInView='visible'
+          transition={{ duration: 1, delay: 0.3, }}
         >
           <img className='about__image' src={PersonalPhoto} />
         </motion.div>
