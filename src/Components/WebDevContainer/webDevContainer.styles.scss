@@ -18,8 +18,13 @@
     position: absolute;
     z-index: 100;
     padding-top: 0;
+    .close-btn-container{
+        right: -3vw;
+        top: 4%;
+    }
     .about-tech__stack{
         width: 90%;
         height: 70%;
+
     }
 }

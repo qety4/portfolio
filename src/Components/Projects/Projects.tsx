@@ -10,6 +10,7 @@ function Projects() {
         <>
             <Divider id='projects' />
             <section className='projects'>
+                
                 <motion.h3 className='projects__title'
                     variants={{
                         hidden: { opacity: 0, y: 0 },
