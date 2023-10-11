@@ -80,7 +80,7 @@ function Contact() {
                         placeholder="your message..." id="" />
 
                     <div className='contact__methods'>
-                        <a className='contact__method' href="mailto:yan.datau.dev@gmail.com" >
+                        <a className='contact__method' href="mailto:yan.dartau.dev@gmail.com" >
                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Gmail_2020.png" alt="" className='contact__method__img' />
                         </a>
                         <a className='contact__method' href='https://www.linkedin.com/in/yandartau/' target='_blank'>
