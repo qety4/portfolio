@@ -44,11 +44,7 @@ function Contact() {
                     '69oawvD-Se87qz-t2',
                 )
                 reset()
-                toast.success(`
-
-                email sent
-                
-                `)
+                toast.success(`email sent`)
                 setError('emailBody',{message:'Thank You !'})
                 setSent(true)
                 return

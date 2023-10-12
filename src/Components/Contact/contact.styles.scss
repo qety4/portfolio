@@ -23,7 +23,8 @@
     .contact__form {
         display: flex;
         flex-direction: column;
-        width: 19rem;
+        width: 77%;
+        max-width: 19rem;
         height: 100%;
         align-items: center;
         z-index: 1;

@@ -7,13 +7,13 @@
     height: 100vh;
     box-sizing: content-box;
     display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1vh;
 
     .about-name__image-container{
         width: 50%;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,18 +22,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 8vw;
 
         .about__image {
-            width: 70%;
+            width: 80%;
+            max-width: 20rem;
             min-width: 10rem;
             aspect-ratio: 1/1.24;
             border-radius: .3rem;
         }
     } 
     .about-name__text-container{
-        width: 50%;
-        height: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,18 +42,14 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 28rem;
-        height: 100%;
+        width: 100%;
         position: relative;
-        margin-top: 3vh;
-        margin-left: 14vw;
-
+        text-align: center;
         .about-name__name {
             font-family: 'Public Sans';
             color: rgb(6, 10, 36);
-            text-align: left;
             width: 100%;
-            font-size: clamp(1.3rem, 5vw, 700%);
+            font-size: clamp(1.1rem, 5vw, 330%);
             font-weight: 200;
             letter-spacing: 0.05rem;
             text-shadow: 0.3px 0.8px 1.8px rgba(0, 0, 0, 0.205);
@@ -69,16 +64,14 @@
 
         .about-name__about {
             color: rgba(24, 24, 24, 0.895);
-            width: 100%;
-            letter-spacing: .17rem;
+            width: 80%;
+            letter-spacing: .11rem;
             line-height: 1.2em;
             word-wrap: break-word;
-            text-align: left;
             font-size: clamp(1rem, 2vw, 190%);
             font-weight: 300;
             font-family: Arial, Helvetica, sans-serif;
             text-shadow: 0.7px 0.8px 1.3px rgba(91, 91, 91, 0.092);
-            padding-left: 3%;
             b {
                 font-weight: 300;
                 text-shadow: 0.3px 0.8px 1.3px rgba(91, 91, 91, 0.107);
