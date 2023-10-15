@@ -39,7 +39,7 @@ const AboutName = () => {
 
           <div className='about-name__about'>
             <b>
-              learning and improving 💫
+              always learning and improving
             </b>
           </div>
           <div className='web-dev-text'>
